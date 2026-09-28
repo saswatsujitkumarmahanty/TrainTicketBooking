@@ -20,9 +20,6 @@ public class PassengerDto
 
     [Required, RegularExpression("^[MFTmft]$", ErrorMessage = "Gender must be M, F or T.")]
     public string Gender { get; set; } = "";
-
-    // Filled in on the way OUT of the API only (ignored if sent in a request).
-    // Null for a waitlisted passenger, since no seat is assigned yet.
     public string? CoachCode { get; set; }
     public int? SeatNumber { get; set; }
     public string? BerthType { get; set; }

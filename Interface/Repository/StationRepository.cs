@@ -49,4 +49,3 @@ namespace Infrastructure.Repository;
             City = r.GetString(r.GetOrdinal("City"))
         };
     }
-
