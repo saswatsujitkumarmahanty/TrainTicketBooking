@@ -1,0 +1,84 @@
+@TrainTicketBooking_HostAddress = https://localhost:7127
+GET {{TrainTicketBooking_HostAddress}}/api/trains/search?from=1&to=3&date=2026-10-05
+
+###
+
+GET {{TrainTicketBooking_HostAddress}}/api/stations/search?term=mum
+
+###
+
+GET {{TrainTicketBooking_HostAddress}}/api/trains/search?from=1&to=3&date=2026-10-05
+
+###
+
+POST {{TrainTicketBooking_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Test User",
+  "email": "test@example.com",
+  "phone": "9876543210",
+  "password": "Test@12345"
+}
+
+###
+
+POST {{TrainTicketBooking_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "Test@12345"
+}
+
+###
+
+
+
+POST {{TrainTicketBooking_HostAddress}}/api/bookings
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwibmFtZSI6IlRlc3QgVXNlciIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNzkwMDgxNzI1LCJpc3MiOiJUcmFpblRpY2tldEJvb2tpbmciLCJhdWQiOiJUcmFpblRpY2tldEJvb2tpbmdDbGllbnQifQ.2PzXITrZy6htKhxdWyMKJQiohKBlsDG3oWAyaGguw00
+{
+  "trainId": 1,
+  "classId": 3,
+  "fromStationId": 1,
+  "toStationId": 3,
+  "journeyDate": "2026-10-05",
+  "passengers": [ { "name": "Waitlist Wally", "age": 40, "gender": "M" } ]
+}
+
+###
+
+GET {{TrainTicketBooking_HostAddress}}/api/bookings
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwibmFtZSI6IlRlc3QgVXNlciIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNzkwMDIwMDg4LCJpc3MiOiJUcmFpblRpY2tldEJvb2tpbmciLCJhdWQiOiJUcmFpblRpY2tldEJvb2tpbmdDbGllbnQifQ.EKs99b8_S8P2bt7fxJhqgZ0gBggWkr7Ef6KikURz0Qk
+###
+
+
+GET {{TrainTicketBooking_HostAddress}}/api/Bookings/3058618290
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwibmFtZSI6IlRlc3QgVXNlciIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNzkwMDgxMDgyLCJpc3MiOiJUcmFpblRpY2tldEJvb2tpbmciLCJhdWQiOiJUcmFpblRpY2tldEJvb2tpbmdDbGllbnQifQ.mmhgNYWfRyl_OMu1GzgZvEStqAw8iCDMG2AQEMQh9hI
+###
+
+GET {{TrainTicketBooking_HostAddress}}/api/bookings/2639764671
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwibmFtZSI6IlRlc3QgVXNlciIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNzkwMDgxNTYzLCJpc3MiOiJUcmFpblRpY2tldEJvb2tpbmciLCJhdWQiOiJUcmFpblRpY2tldEJvb2tpbmdDbGllbnQifQ.OwQOMIrNEBUp3v1CYvKICMootjsRseZLRj0sXPh8f6s
+###
+
+GET {{TrainTicketBooking_HostAddress}}/api/trains/search?from=1&to=3&date=2026-10-05
+
+###
+
+POST {{TrainTicketBooking_HostAddress}}/api/Bookings/1932264689/cancel
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwibmFtZSI6IlRlc3QgVXNlciIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNzkwMDgxNTYzLCJpc3MiOiJUcmFpblRpY2tldEJvb2tpbmciLCJhdWQiOiJUcmFpblRpY2tldEJvb2tpbmdDbGllbnQifQ.OwQOMIrNEBUp3v1CYvKICMootjsRseZLRj0sXPh8f6s
+###
+
+POST {{TrainTicketBooking_HostAddress}}/api/bookings
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0QGV4YW1wbGUuY29tIiwibmFtZSI6IlRlc3QgVXNlciIsInJvbGUiOiJVc2VyIiwiZXhwIjoxNzkwMDIwMDg4LCJpc3MiOiJUcmFpblRpY2tldEJvb2tpbmciLCJhdWQiOiJUcmFpblRpY2tldEJvb2tpbmdDbGllbnQifQ.EKs99b8_S8P2bt7fxJhqgZ0gBggWkr7Ef6KikURz0Qk
+{
+  "trainId": 1,
+  "classId": 3,
+  "fromStationId": 1,
+  "toStationId": 3,
+  "journeyDate": "2026-10-05",
+  "passengers": [ { "name": "Asha Rao", "age": 34, "gender": "F" } ]
+}
+###

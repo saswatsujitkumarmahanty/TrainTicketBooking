@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../Application/Application.csproj" Id="0c3532dd-61c6-4a07-8f68-284b10f6e123" />
+  <Project Path="../Domain/Domain.csproj" Id="9883494c-6150-493d-a93c-d10054fdaa35" />
+  <Project Path="../Interface/Infrastructure.csproj" Id="81236977-111b-4c17-8b44-6493a72966ef" />
+  <Project Path="TrainTicketBooking.csproj" />
+</Solution>
