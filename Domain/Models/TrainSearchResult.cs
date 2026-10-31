@@ -20,5 +20,5 @@ public class ClassAvailability
     public string ClassName { get; set; } = "";
     public decimal Fare { get; set; }
     public int AvailableSeats { get; set; }
-    public string Status => AvailableSeats > 0 ? $"AVL {AvailableSeats}" : "WL";
+    public string Status => AvailableSeats > 0 ? $"AVL {AvailableSeats}" : "SOLD OUT";
 }

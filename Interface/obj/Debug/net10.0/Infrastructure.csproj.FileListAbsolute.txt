@@ -14,6 +14,7 @@ C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\Interface\obj\Debug\net
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\Interface\obj\Debug\net10.0\Infrastructure.AssemblyInfoInputs.cache
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\Interface\obj\Debug\net10.0\Infrastructure.AssemblyInfo.cs
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\Interface\obj\Debug\net10.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\Interface\obj\Debug\net10.0\Infrastructure.sourcelink.json
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\Interface\obj\Debug\net10.0\Infrastr.15EFFBFE.Up2Date
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\Interface\obj\Debug\net10.0\Infrastructure.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\Interface\obj\Debug\net10.0\refint\Infrastructure.dll

@@ -146,5 +146,36 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainTicketBooking.Controllers.TrainsController",
+    "Method": "Vacancy",
+    "RelativePath": "api/Trains/vacancy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trainNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "from",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "to",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

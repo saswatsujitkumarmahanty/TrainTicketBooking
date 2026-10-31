@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JsYHMJX5Iu0=",
+  "dgSpecHash": "atgDFLhBNP8=",
   "success": true,
   "projectFilePath": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\SaswatMahanty\\.nuget\\packages\\system.security.cryptography.pkcs\\10.0.14\\system.security.cryptography.pkcs.10.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
