@@ -26,6 +26,7 @@ public class BookingRepository(IDbConnectionFactory factory) : IBookingRepositor
         cmd.Parameters.Add("@FromStationId", SqlDbType.Int).Value = request.FromStationId;
         cmd.Parameters.Add("@ToStationId", SqlDbType.Int).Value = request.ToStationId;
         cmd.Parameters.Add("@JourneyDate", SqlDbType.Date).Value = request.JourneyDate.ToDateTime(TimeOnly.MinValue);
+        cmd.Parameters.Add("@IsReturn", SqlDbType.Bit).Value = request.IsReturn;
         var tvp = cmd.Parameters.Add("@Passengers", SqlDbType.Structured);
         tvp.TypeName = "dbo.PassengerTableType";
         tvp.Value = passengers;

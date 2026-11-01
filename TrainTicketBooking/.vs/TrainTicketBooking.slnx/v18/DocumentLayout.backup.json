@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 260,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,21 +65,16 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TrainTicketBooking",
+              "Title": "TrainTicketBooking.csproj",
               "DocumentMoniker": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\TrainTicketBooking\\TrainTicketBooking.csproj",
               "RelativeDocumentMoniker": "TrainTicketBooking.csproj",
               "ToolTip": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\TrainTicketBooking\\TrainTicketBooking.csproj",
               "RelativeToolTip": "TrainTicketBooking.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-01T08:11:28.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-01T08:11:28.701Z"
             },
             {
               "$type": "Document",
@@ -91,8 +86,7 @@
               "RelativeToolTip": "Controllers\\BookingController.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAuwE0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T04:57:40.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-01T04:57:40.87Z"
             },
             {
               "$type": "Document",
@@ -154,6 +148,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
               "WhenOpened": "2026-10-30T05:24:31.588Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}"
             }
           ]
         }

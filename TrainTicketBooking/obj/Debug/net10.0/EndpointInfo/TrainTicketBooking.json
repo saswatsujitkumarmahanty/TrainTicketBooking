@@ -396,6 +396,9 @@
             "type": "string",
             "format": "date"
           },
+          "isReturn": {
+            "type": "boolean"
+          },
           "passengers": {
             "maxItems": 8,
             "minItems": 1,

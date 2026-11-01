@@ -35,6 +35,9 @@ public class CreateBookingRequest
     [NotPastDate]
     public DateOnly JourneyDate { get; set; }
 
+    // Return ticket: one booking, valid same day on the opposite route, 2x fare
+    public bool IsReturn { get; set; }
+
     [Required, MinLength(1), MaxLength(8)]
     public List<PassengerDto> Passengers { get; set; } = [];
 }
