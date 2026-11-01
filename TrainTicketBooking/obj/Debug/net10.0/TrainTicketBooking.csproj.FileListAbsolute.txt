@@ -53,7 +53,6 @@ C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\System.Composition.TypedParts.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -138,7 +137,6 @@ C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\Application.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\Domain.dll
 C:\Users\SaswatMahanty\source\repos\Complete TrainTicket\TrainTicketBooking\bin\Debug\net10.0\Infrastructure.dll

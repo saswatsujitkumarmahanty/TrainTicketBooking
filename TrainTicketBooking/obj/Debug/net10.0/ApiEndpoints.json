@@ -90,6 +90,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TrainTicketBooking.Controllers.BookingsController",
+    "Method": "CreateRoundTrip",
+    "RelativePath": "api/Bookings/roundtrip",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.Dto.RoundTripRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TrainTicketBooking.Controllers.StationsController",
     "Method": "Get",
     "RelativePath": "api/Stations/{id}",

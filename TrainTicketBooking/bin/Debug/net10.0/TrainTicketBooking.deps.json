@@ -14,8 +14,7 @@
           "Microsoft.AspNetCore.OpenApi": "10.0.14",
           "Microsoft.Data.SqlClient": "7.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.14",
-          "Microsoft.EntityFrameworkCore.Tools": "10.0.14",
-          "System.Security.Cryptography.Pkcs": "10.0.14"
+          "Microsoft.EntityFrameworkCore.Tools": "10.0.14"
         },
         "runtime": {
           "TrainTicketBooking.dll": {}
@@ -348,8 +347,7 @@
           "Microsoft.IdentityModel.JsonWebTokens": "8.19.2",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.19.2",
           "Microsoft.SqlServer.Server": "1.0.0",
-          "System.Configuration.ConfigurationManager": "9.0.18",
-          "System.Security.Cryptography.Pkcs": "10.0.14"
+          "System.Configuration.ConfigurationManager": "9.0.18"
         },
         "runtime": {
           "lib/net9.0/Microsoft.Data.SqlClient.dll": {
@@ -724,22 +722,6 @@
           }
         }
       },
-      "System.Security.Cryptography.Pkcs/10.0.14": {
-        "runtime": {
-          "lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.1426.52326"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.1426.52326"
-          }
-        }
-      },
       "System.Security.Cryptography.ProtectedData/9.0.18": {
         "runtime": {
           "lib/net9.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -750,8 +732,7 @@
       },
       "Application/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0",
-          "System.Security.Cryptography.Pkcs": "10.0.14"
+          "Domain": "1.0.0"
         },
         "runtime": {
           "Application.dll": {
@@ -761,9 +742,6 @@
         }
       },
       "Domain/1.0.0": {
-        "dependencies": {
-          "System.Security.Cryptography.Pkcs": "10.0.14"
-        },
         "runtime": {
           "Domain.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -775,8 +753,7 @@
         "dependencies": {
           "Application": "1.0.0",
           "Domain": "1.0.0",
-          "Microsoft.Data.SqlClient": "7.1.1",
-          "System.Security.Cryptography.Pkcs": "10.0.14"
+          "Microsoft.Data.SqlClient": "7.1.1"
         },
         "runtime": {
           "Infrastructure.dll": {
@@ -1079,13 +1056,6 @@
       "sha512": "sha512-gqhDC/icByKEutygpr+OFgAmjwTVowyzFjWB8K0q1ww8uFj5a1BQNL+QvijUl9uhq4p8OdDwcAIrjVC+eC9FVA==",
       "path": "system.identitymodel.tokens.jwt/8.19.2",
       "hashPath": "system.identitymodel.tokens.jwt.8.19.2.nupkg.sha512"
-    },
-    "System.Security.Cryptography.Pkcs/10.0.14": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Wz+IgL2xpg8KJ4i2VWj6uz1PmZNu4Q0Ljlwd73P9Vze5NcOBtctLii3itV0PB2MpOqwqDEGfB6RCdv94A4E5yQ==",
-      "path": "system.security.cryptography.pkcs/10.0.14",
-      "hashPath": "system.security.cryptography.pkcs.10.0.14.nupkg.sha512"
     },
     "System.Security.Cryptography.ProtectedData/9.0.18": {
       "type": "package",
