@@ -51,6 +51,53 @@ public class BookingRepository(IDbConnectionFactory factory) : IBookingRepositor
         }
     }
 
+    public async Task<RoundTripResult> CreateRoundTripAsync(int userId, RoundTripRequest request)
+    {
+        var passengers = new DataTable();
+        passengers.Columns.Add("Name", typeof(string));
+        passengers.Columns.Add("Age", typeof(int));
+        passengers.Columns.Add("Gender", typeof(string));
+        foreach (var p in request.Passengers)
+            passengers.Rows.Add(p.Name.Trim(), p.Age, p.Gender.ToUpperInvariant());
+
+        using var conn = factory.CreateConnection();
+        using var cmd = new SqlCommand("usp_Booking_CreateRoundTrip", conn) { CommandType = CommandType.StoredProcedure };
+        cmd.Parameters.Add("@UserId", SqlDbType.Int).Value = userId;
+        cmd.Parameters.Add("@ClassId", SqlDbType.Int).Value = request.ClassId;
+        cmd.Parameters.Add("@OutTrainId", SqlDbType.Int).Value = request.OutboundTrainId;
+        cmd.Parameters.Add("@RetTrainId", SqlDbType.Int).Value = request.ReturnTrainId;
+        cmd.Parameters.Add("@FromStationId", SqlDbType.Int).Value = request.FromStationId;
+        cmd.Parameters.Add("@ToStationId", SqlDbType.Int).Value = request.ToStationId;
+        cmd.Parameters.Add("@JourneyDate", SqlDbType.Date).Value = request.JourneyDate.ToDateTime(TimeOnly.MinValue);
+        var tvp = cmd.Parameters.Add("@Passengers", SqlDbType.Structured);
+        tvp.TypeName = "dbo.PassengerTableType";
+        tvp.Value = passengers;
+
+        var result = new RoundTripResult();
+        try
+        {
+            await conn.OpenAsync();
+            using var reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                var wlOrdinal = reader.GetOrdinal("WaitlistNumber");
+                result.Bookings.Add(new BookingCreatedResult
+                {
+                    BookingId = reader.GetInt32(reader.GetOrdinal("BookingId")),
+                    Pnr = reader.GetString(reader.GetOrdinal("Pnr")).Trim(),
+                    TotalFare = reader.GetDecimal(reader.GetOrdinal("TotalFare")),
+                    Status = reader.GetString(reader.GetOrdinal("Status")),
+                    WaitlistNumber = reader.IsDBNull(wlOrdinal) ? null : reader.GetInt32(wlOrdinal)
+                });
+            }
+            return result;
+        }
+        catch (SqlException ex) when (ex.Number >= 50000)
+        {
+            throw new BusinessRuleException(ex.Message, ex.Number);
+        }
+    }
+
     public async Task<BookingDetails?> GetByPnrAsync(string pnr, int userId)
     {
         using var conn = factory.CreateConnection();

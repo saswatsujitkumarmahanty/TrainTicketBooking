@@ -28,6 +28,22 @@ public class BookingsController(IBookingRepository bookings) : ControllerBase
             return ToResult(ex);
         }
     }
+    // POST api/bookings/roundtrip   (outbound + return on the same day, all-or-nothing)
+    [HttpPost("roundtrip")]
+    public async Task<IActionResult> CreateRoundTrip(RoundTripRequest request)
+    {
+        if (request.FromStationId == request.ToStationId)
+            return BadRequest(new { error = "Source and destination must be different." });
+        try
+        {
+            var result = await bookings.CreateRoundTripAsync(UserId, request);
+            return Ok(result);
+        }
+        catch (BusinessRuleException ex)
+        {
+            return ToResult(ex);
+        }
+    }
     // GET api/bookings   (my bookings)
     [HttpGet]
     public async Task<IActionResult> GetMine() => Ok(await bookings.GetByUserAsync(UserId));

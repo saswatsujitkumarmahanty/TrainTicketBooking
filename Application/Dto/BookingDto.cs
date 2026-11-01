@@ -35,9 +35,24 @@ public class CreateBookingRequest
     [NotPastDate]
     public DateOnly JourneyDate { get; set; }
 
-    [Required, MinLength(1), MaxLength(6)]
+    [Required, MinLength(1), MaxLength(8)]
     public List<PassengerDto> Passengers { get; set; } = [];
 }
+public class RoundTripRequest
+{
+    [Range(1, int.MaxValue)] public int ClassId { get; set; }
+    [Range(1, int.MaxValue)] public int OutboundTrainId { get; set; }
+    [Range(1, int.MaxValue)] public int ReturnTrainId { get; set; }
+    [Range(1, int.MaxValue)] public int FromStationId { get; set; }
+    [Range(1, int.MaxValue)] public int ToStationId { get; set; }
+
+    [NotPastDate]
+    public DateOnly JourneyDate { get; set; }
+
+    [Required, MinLength(1), MaxLength(8)]
+    public List<PassengerDto> Passengers { get; set; } = [];
+}
+
 public class BookingSummary
 {
     public int BookingId { get; set; }
@@ -69,4 +84,11 @@ public class BookingCreatedResult
     public decimal TotalFare { get; set; }
     public string Status { get; set; } = "";
     public int? WaitlistNumber { get; set; }
+}
+
+public class RoundTripResult
+{
+    // [0] = outbound, [1] = return
+    public List<BookingCreatedResult> Bookings { get; set; } = [];
+    public decimal TotalFare => Bookings.Sum(b => b.TotalFare);
 }

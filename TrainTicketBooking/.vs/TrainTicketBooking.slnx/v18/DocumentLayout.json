@@ -3,11 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\TrainTicketBooking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9883494C-6150-493D-A93C-D10054FDAA35}|..\\Domain\\Domain.csproj|c:\\users\\saswatmahanty\\source\\repos\\complete trainticket\\domain\\models\\trainsearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C884A9F0-2D87-5D1F-7A5A-F10AAC1F8B3B}|TrainTicketBooking.csproj|c:\\users\\saswatmahanty\\source\\repos\\complete trainticket\\trainticketbooking\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C884A9F0-2D87-5D1F-7A5A-F10AAC1F8B3B}|TrainTicketBooking.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81236977-111B-4C17-8B44-6493A72966EF}|..\\Interface\\Infrastructure.csproj|c:\\users\\saswatmahanty\\source\\repos\\complete trainticket\\interface\\repository\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3532DD-61C6-4A07-8F68-284B10F6E123}|..\\Application\\Application.csproj|c:\\users\\saswatmahanty\\source\\repos\\complete trainticket\\application\\interface\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3532DD-61C6-4A07-8F68-284B10F6E123}|..\\Application\\Application.csproj|c:\\users\\saswatmahanty\\source\\repos\\complete trainticket\\application\\dto\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C884A9F0-2D87-5D1F-7A5A-F10AAC1F8B3B}|TrainTicketBooking.csproj|c:\\users\\saswatmahanty\\source\\repos\\complete trainticket\\trainticketbooking\\trainticketbooking.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{C884A9F0-2D87-5D1F-7A5A-F10AAC1F8B3B}|TrainTicketBooking.csproj|solutionrelative:trainticketbooking.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9883494C-6150-493D-A93C-D10054FDAA35}|..\\Domain\\Domain.csproj|c:\\users\\saswatmahanty\\source\\repos\\complete trainticket\\domain\\models\\trainsearchresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 260,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,8 +61,61 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\TrainTicketBooking\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\TrainTicketBooking\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwEkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T04:57:40.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\Interface\\Repository\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "..\\Interface\\Repository\\BookingRepository.cs",
+              "ToolTip": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\Interface\\Repository\\BookingRepository.cs",
+              "RelativeToolTip": "..\\Interface\\Repository\\BookingRepository.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAADwv7wAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T04:57:14.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IBookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\Application\\Interface\\IBookingRepository.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interface\\IBookingRepository.cs",
+              "ToolTip": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\Application\\Interface\\IBookingRepository.cs",
+              "RelativeToolTip": "..\\Application\\Interface\\IBookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T04:56:40.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingDto.cs",
+              "DocumentMoniker": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\Application\\Dto\\BookingDto.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Dto\\BookingDto.cs",
+              "ToolTip": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\Application\\Dto\\BookingDto.cs",
+              "RelativeToolTip": "..\\Application\\Dto\\BookingDto.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T04:35:10.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "TrainSearchResult.cs",
               "DocumentMoniker": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\Domain\\Models\\TrainSearchResult.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Models\\TrainSearchResult.cs",
@@ -57,21 +123,19 @@
               "RelativeToolTip": "..\\Domain\\Models\\TrainSearchResult.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAIwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T12:39:30.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-31T12:39:30.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "TrainTicketBooking.http",
               "DocumentMoniker": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\TrainTicketBooking\\TrainTicketBooking.http",
               "RelativeDocumentMoniker": "TrainTicketBooking.http",
               "ToolTip": "C:\\Users\\SaswatMahanty\\source\\repos\\Complete TrainTicket\\TrainTicketBooking\\TrainTicketBooking.http",
               "RelativeToolTip": "TrainTicketBooking.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwB0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-10-30T05:24:31.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T05:24:31.588Z"
             }
           ]
         }
